@@ -12,7 +12,7 @@ const generateCertificateId = () => {
 router.post('/generate', async (req, res) => {
   try {
     const { recipientName, courseName, templateName } = req.body;
-    
+    console.log("generating");
     const certificate = new Certificate({
       recipientName,
       courseName,
