@@ -10,11 +10,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: [
-    'http://localhost:3000', 
-    'https://certificate-generator-3bma.onrender.com'
-  ],
-  credentials: true
+  origin:'*', 
+  // [
+  //   'http://localhost:3000', 
+  //   'https://certificate-generator-3bma.onrender.com'
+  // ],
+//  credentials: true
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
